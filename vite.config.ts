@@ -1,6 +1,19 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'path';
+
 import vue from '@vitejs/plugin-vue'
+import plugin, { Mode } from 'vite-plugin-markdown'
+/**
+ * @type { import('vite').UserConfig }
+ */
+
+function pathResolve(dir: string) {
+  return resolve(__dirname, '.', dir);
+}
 
 export default defineConfig({
-  plugins: [vue()]
+  alias: {
+    '/@/': `${pathResolve('src')}/`,
+  },
+  plugins: [vue(), plugin({ mode: [Mode.HTML, Mode.TOC, Mode.VUE] })]
 })
