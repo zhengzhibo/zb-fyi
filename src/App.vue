@@ -3,7 +3,7 @@
     <page-header />
     <home />
     <page-footer />
-    测试发布
+    测试发布2
   </div>
 </template>
 
