@@ -4,6 +4,16 @@ $black-color: #000;
 $main-color: lightcoral;
 $fore-color: #eee;
 
+
+
+$color-initial: #fff !default;
+$color-primary: lightcoral !default;
+$color-secondary: #606c76 !default;
+$color-tertiary: #f4f5f6 !default;
+$color-quaternary: #d1d1d1 !default;
+$color-quinary: #e1e1e1 !default;
+
+
 $main-color-light-2: mix($white-color, $main-color, 20);
 $main-color-light-4: mix($white-color, $main-color, 40);
 $main-color-light-6: mix($white-color, $main-color, 60);
