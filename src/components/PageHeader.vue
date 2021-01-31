@@ -1,7 +1,7 @@
 <template>
-  <header>
+  <header class="page-header">
     <img src="/avatar.jpg" class="avatar">
-    <h1>Zb.fyi</h1>
+    <span class="title">Zb.fyi</span>
   </header>
 </template>
 
@@ -9,7 +9,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'ZHeader',
+  name: 'PageHeader',
   setup: () => {
   }
 })
@@ -20,5 +20,14 @@ export default defineComponent({
   width: 160px;
   height: 160px;
   border-radius: 50%;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 60px;
 }
 </style>

@@ -13,3 +13,10 @@ export default defineComponent({
   }
 })
 </script>
+
+<style lang="scss" scoped>
+section {
+  min-height: 120vh;
+  text-align: center;
+}
+</style>

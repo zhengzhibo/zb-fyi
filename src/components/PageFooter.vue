@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="page-footer">
     footer
   </footer>
 </template>
@@ -8,8 +8,19 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'ZFooter',
+  name: 'PageFooter',
   setup: () => {
   }
 })
 </script>
+
+<style lang="scss" scoped>
+@import 'src/styles/vars.scss';
+
+.page-footer {
+  background: $main-color;
+  width: 75%;
+  border-radius: 0 5px 0 0;
+  color: $fore-color;
+}
+</style>

@@ -1,0 +1,25 @@
+$white-color: #fff;
+$black-color: #000;
+
+$main-color: lightcoral;
+$fore-color: #eee;
+
+$main-color-light-2: mix($white-color, $main-color, 20);
+$main-color-light-4: mix($white-color, $main-color, 40);
+$main-color-light-6: mix($white-color, $main-color, 60);
+$main-color-light-8: mix($white-color, $main-color, 80);
+
+$main-color-dark-2: mix($black-color, $main-color, 20);
+$main-color-dark-4: mix($black-color, $main-color, 40);
+$main-color-dark-6: mix($black-color, $main-color, 60);
+$main-color-dark-8: mix($black-color, $main-color, 80);
+
+$fore-color-light-2: mix($white-color, $fore-color, 20);
+$fore-color-light-4: mix($white-color, $fore-color, 40);
+$fore-color-light-6: mix($white-color, $fore-color, 60);
+$fore-color-light-8: mix($white-color, $fore-color, 80);
+
+$fore-color-dark-2: mix($black-color, $fore-color, 20);
+$fore-color-dark-4: mix($black-color, $fore-color, 40);
+$fore-color-dark-6: mix($black-color, $fore-color, 60);
+$fore-color-dark-8: mix($black-color, $fore-color, 80);
