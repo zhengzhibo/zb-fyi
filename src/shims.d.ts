@@ -7,4 +7,5 @@ declare module '*.vue' {
 
   declare module '*.md' {
     const html:string;
+    const attributes: object;
   }
