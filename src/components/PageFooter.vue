@@ -1,6 +1,6 @@
 <template>
   <footer class="page-footer">
-    footer
+    Copyright © 2014-2021 Alex Zheng
   </footer>
 </template>
 

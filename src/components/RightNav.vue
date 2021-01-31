@@ -1,16 +1,16 @@
 <template>
   <div class="right-nav">
     <github class="icons" />
-    <twitter class="icons" />
+    <weibo class="icons" />
   </div>
 </template>
 
 <script>
 import github from '../components/SvgIcon/github.svg'
-import twitter from '../components/SvgIcon/twitter.svg'
+import weibo from '../components/SvgIcon/weibo.svg'
 
 export default {
-  components: { github, twitter }
+  components: { github, weibo }
 }
 </script>
 
