@@ -1,6 +1,9 @@
 <template>
   <section>
-    <component v-if="post" :is="post.VueComponent" />
+    <div v-if="post" class="content">
+      <h1>{{ post.attributes.title }}</h1>
+      <component :is="post.VueComponent" />
+    </div>
   </section>
 </template>
 
@@ -19,8 +22,7 @@ export default defineComponent({
     const post = ref()
 
     watchEffect(() => {
-      const a = posts.value.find(x => x.attributes.url === props.postUrl)
-      post.value = a
+      post.value = posts.value.find(post => post.attributes.url === props.postUrl)
     })
 
     return {
