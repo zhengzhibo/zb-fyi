@@ -15,7 +15,21 @@ const routes:RouteRecordRaw[] = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
-  strict: true
+  strict: true,
+  scrollBehavior(to, from, savedPosition) {
+    if (to.fullPath === '/' && savedPosition) {
+      return {
+        top: savedPosition.top,
+        left: savedPosition.left
+      }
+    } else {
+      return {
+        top: 0,
+        left: 0
+      }
+    }
+  }
+
 })
 
 // config router
