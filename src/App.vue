@@ -22,24 +22,16 @@ export default defineComponent({
     PageHeader, PageFooter, RightNav
   },
   setup: () => {
-    const rawMds = import.meta.glob('./articles/*.md')
+    const postFile = import.meta.globEager('./articles/*.md')
     const posts = shallowRef<object>([])
-    const promiseCollection: Promise<object>[] = []
-
-    for (const path in rawMds) {
-      promiseCollection.push(rawMds[path]())
+    for (const path in postFile) {
+      const post = postFile[path]
+      post.attributes.parsedTime = new Date(post.attributes.time)
+      post.attributes.path = path
     }
-    Promise.all(promiseCollection).then(mdObjects => {
-      mdObjects = mdObjects.map(post => {
-        post.attributes.parsedTime = new Date(post.attributes.time)
-        return post
-      })
 
-      mdObjects.sort((a, b) => {
-        return a.attributes.parsedTime.getTime() - b.attributes.parsedTime.getTime()
-      })
-
-      posts.value = mdObjects
+    posts.value = Object.values(postFile).sort((a, b) => {
+      return a.attributes.parsedTime.getTime() - b.attributes.parsedTime.getTime()
     })
 
     provide('posts', posts)
