@@ -1,4 +1,5 @@
 ---
+title: My Cool App
 time: 2021-01-12 12:11
 url: test_2
 ---

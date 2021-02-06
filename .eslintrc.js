@@ -1,15 +1,67 @@
 module.exports = {
-  root: true,
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    parser: '@typescript-eslint/parser',
+    ecmaVersion: 2020,
+  },
   env: {
     browser: true,
     node: true,
     es6: true
   },
-  extends: ['plugin:vue/recommended', 'eslint:recommended'],
 
-  // add your custom rules here
-  // it is base on https://github.com/vuejs/eslint-config-vue
+  extends: [
+    'plugin:vue/vue3-recommended',
+    'plugin:@typescript-eslint/recommended'
+  ],
   rules: {
+    '@typescript-eslint/ban-ts-ignore': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    'vue/custom-event-name-casing': 'off',
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/ban-types': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        argsIgnorePattern: '^h$',
+        varsIgnorePattern: '^h$'
+      }
+    ],
+    'no-unused-vars': [
+      'error',
+      {
+        argsIgnorePattern: '^h$',
+        varsIgnorePattern: '^h$'
+      }
+    ],
+
+    'vue/attributes-order': 'off',
+    'vue/one-component-per-file': 'off',
+    'vue/html-closing-bracket-newline': 'off',
+    'vue/multiline-html-element-content-newline': 'off',
+    'vue/singleline-html-element-content-newline': 'off',
+    'vue/attribute-hyphenation': 'off',
+    // 'vue/html-self-closing': 'off',
+    'vue/require-default-prop': 'off',
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          void: 'always',
+          normal: 'never',
+          component: 'always'
+        },
+        svg: 'always',
+        math: 'always'
+      }
+    ],
     'vue/max-attributes-per-line': [2, {
       'singleline': 10,
       'multiline': {
@@ -17,8 +69,6 @@ module.exports = {
         'allowFirstLine': false
       }
     }],
-    'vue/singleline-html-element-content-newline': 'off',
-    'vue/multiline-html-element-content-newline': 'off',
     'vue/name-property-casing': ['error', 'PascalCase'],
     'vue/no-v-html': 'off',
     'accessor-pairs': 2,
@@ -138,10 +188,6 @@ module.exports = {
     }],
     'no-unreachable': 2,
     'no-unsafe-finally': 2,
-    'no-unused-vars': [2, {
-      'vars': 'all',
-      'args': 'none'
-    }],
     'no-useless-call': 2,
     'no-useless-computed-key': 2,
     'no-useless-constructor': 2,

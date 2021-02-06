@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import github from '../components/SvgIcon/github.svg'
-import weibo from '../components/SvgIcon/weibo.svg'
+import github from '/@/components/SvgIcon/github.svg'
+import weibo from '/@/components/SvgIcon/weibo.svg'
 
 export default {
   components: { github, weibo }

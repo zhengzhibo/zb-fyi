@@ -1,6 +1,6 @@
 <template>
   <header class="page-header">
-    <img src="/avatar.png" class="avatar">
+    <img src="/avatar.jpg" class="avatar" />
     <span class="title">Zb.fyi</span>
   </header>
 </template>
@@ -17,17 +17,19 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .avatar {
-  width: 150px;
-  height: 150px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
+  margin-right: 2rem;
 }
 
 .page-header {
   display: flex;
   align-items: center;
+  padding-top: 10px;
 }
 
 .title {
-  font-size: 60px;
+  font-size: 16px;
 }
 </style>

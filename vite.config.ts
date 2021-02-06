@@ -20,5 +20,5 @@ export default defineConfig({
       replacement: pathResolve('src') + '/',
     },
   ],
-  plugins: [vue(), svgLoader(), plugin({ mode: [Mode.HTML, Mode.TOC, Mode.VUE] })]
+  plugins: [vue(), svgLoader(), plugin({ mode: [Mode.TOC, Mode.VUE] })]
 })
