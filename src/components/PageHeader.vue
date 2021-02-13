@@ -1,7 +1,9 @@
 <template>
   <header class="page-header">
-    <img src="/avatar.jpg" class="avatar" />
-    <span class="title">Zb.fyi</span>
+    <router-link to="/">
+      <img src="/avatar.jpg" class="avatar" />
+      <span class="title">Zb.fyi</span>
+    </router-link>
   </header>
 </template>
 
@@ -27,6 +29,11 @@ export default defineComponent({
   display: flex;
   align-items: center;
   padding-top: 10px;
+}
+
+.page-header a {
+  display: flex;
+  align-items: center;
 }
 
 .title {
