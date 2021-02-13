@@ -18,7 +18,7 @@ export default defineComponent({
 @import 'src/styles/vars.scss';
 
 .page-footer {
-  background: $main-color;
+  background: $color-primary;
   width: 75%;
   border-radius: 0 5px 0 0;
   color: $fore-color;

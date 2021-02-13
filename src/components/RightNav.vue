@@ -20,7 +20,7 @@ export default {
 .right-nav {
   position: absolute;
   right: 0;
-  background-color: $main-color;
+  background-color: $color-primary;
   width: 150px;
   height: 50px;
   padding: 0 10px;
