@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="content">
     <div v-for="post in posts" :key="post.attributes.url" class="post">
       <router-link :to="{path: `/post/${post.attributes.url}`}">
         <h1>{{ post.attributes.title }}</h1>
@@ -26,6 +26,10 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .post {
-  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.post:last-child {
+  padding-bottom: 0;
 }
 </style>

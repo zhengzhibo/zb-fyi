@@ -6,6 +6,10 @@ body {
     border: 12px solid $color-primary;
 }
 
+.content {
+  padding: 25px 0;
+}
+
 ::-webkit-scrollbar-track {
     background: $color-primary;
   }
