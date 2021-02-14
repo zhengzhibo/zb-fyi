@@ -1,8 +1,11 @@
 <template>
-  <section>
-    <div v-if="post" class="content">
+  <section class="content">
+    <div v-if="post">
       <h1>{{ post.attributes.title }}</h1>
       <component :is="post.VueComponent" />
+    </div>
+    <div v-else>
+      <h1>找不到对应文章…</h1>
     </div>
   </section>
 </template>
