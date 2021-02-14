@@ -5,10 +5,13 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 import Home from '/@/components/Home.vue'
 import Post from '/@/components/Post.vue'
+import Page404 from '/@/components/404.vue'
 
 const routes:RouteRecordRaw[] = [
   { path: '/', component: Home },
-  { path: '/post/:postUrl', component: Post, props: true }
+  { path: '/post/:postUrl', component: Post, props: true },
+
+  { path: '/:catchAll(.*)', component: Page404 }
 ]
 
 // app router
