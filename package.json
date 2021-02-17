@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vuedx-typecheck . && vite build",
-    "build-vercel": "vite build"
+    "build-vercel": "vite build",
+    "build-ssr": "vite build --ssr"
   },
   "dependencies": {
     "eslint": "^7.18.0",
