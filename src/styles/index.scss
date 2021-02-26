@@ -3,13 +3,10 @@
 
 body {
   margin: 0;
-  border: 12px solid $color-primary;
-  min-height: 100vh;
 }
 
 .content {
   padding: 25px 0;
-  min-height: calc(100vh - 318px);
 }
 
 ::-webkit-scrollbar-track {

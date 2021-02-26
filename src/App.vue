@@ -1,6 +1,6 @@
 <template>
+  <right-nav />
   <div class="wrapper">
-    <right-nav />
     <div class="container">
       <page-header />
       <router-view />
@@ -40,5 +40,13 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "styles/vars";
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 12px solid $color-primary;
+  min-height: 100vh;
+}
 </style>
