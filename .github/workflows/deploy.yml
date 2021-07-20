@@ -16,16 +16,13 @@ jobs:
         node-version: [14.x]
     steps:
     - uses: actions/checkout@v2
-    - name: Make envfile
-      uses: "finnp/create-file-action@master"
-      env:
-        FILE_NAME: ".env"
-        FILE_DATA: "TENCENT_SECRET_ID=${{ secrets.SECRETID }}\nTENCENT_SECRET_KEY=${{ secrets.SECRETKEY }}"
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: npm i serverless -g
+    - run: serverless credentials --secretId ${{ secrets.SECRETID }} --secretKey ${{ secrets.SECRETKEY }}
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm run deploy
+    - run: serverless deploy
