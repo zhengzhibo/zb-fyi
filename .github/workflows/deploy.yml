@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Make envfile
-    - uses: "finnp/create-file-action@master"
+      uses: "finnp/create-file-action@master"
       env:
         FILE_NAME: ".env"
         FILE_DATA: "TENCENT_SECRET_ID=${{ secrets.SECRETID }}\nTENCENT_SECRET_KEY=${{ secrets.SECRETKEY }}"
