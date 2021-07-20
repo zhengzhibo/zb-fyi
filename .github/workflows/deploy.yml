@@ -6,7 +6,6 @@ on:
   pull_request:
     branches: [ master ]
 env:
-  SECRET_ID2: 2
   SECRET_ID: ${{ secrets.SECRETID }}
   SECRET_KEY: ${{ secrets.SECRETKEY }}
 jobs:
@@ -24,5 +23,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: printenv
+    - run: npm i serverless -g
+    - run: serverless credentials set --secretId $SECRET_ID --secretKey $SECRET_KEY
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: serverless deploy
 
