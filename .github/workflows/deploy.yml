@@ -6,6 +6,7 @@ on:
   pull_request:
     branches: [ master ]
 env:
+  SECRET_ID2: 2
   SECRET_ID: ${{ secrets.SECRETID }}
   SECRET_KEY: ${{ secrets.SECRETKEY }}
 jobs:
