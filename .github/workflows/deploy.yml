@@ -17,11 +17,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Make envfile
-      uses: SpicyPizza/create-envfile@v1
-      with:
-        TENCENT_SECRET_ID: ${{ secrets.SECRETID }}
-        TENCENT_SECRET_KEY: ${{ secrets.SECRETKEY }}
-        file_name: .env
+    - uses: "finnp/create-file-action@master"
+      env:
+        FILE_NAME: ".env"
+        FILE_DATA: "TENCENT_SECRET_ID=${{ secrets.SECRETID }}\nTENCENT_SECRET_KEY=${{ secrets.SECRETKEY }}"
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
