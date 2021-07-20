@@ -1,0 +1,22 @@
+{
+  "name": "zb-fyi",
+  "version": "1.0.0",
+  "description": "zb.fyi ",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "serverless deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengzhibo/zb-fyi.git"
+  },
+  "author": "Alex Zheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhengzhibo/zb-fyi/issues"
+  },
+  "homepage": "https://github.com/zhengzhibo/zb-fyi#readme",
+  "devDependencies": {
+    "serverless": "^2.52.0"
+  }
+}
