@@ -19,6 +19,13 @@ jobs:
         node-version: [14.x]
     steps:
     - uses: actions/checkout@v2
+    - name: Make envfile
+      uses: SpicyPizza/create-envfile@v1
+      with:
+        envkey_SOME_API_KEY: "123456abcdef"
+        envkey_TENCENT_SECRET_ID: ${{ secrets.SECRETID }}
+        envkey_TENCENT_SECRET_KEY: ${{ secrets.SECRETKEY }}
+        file_name: .env
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
