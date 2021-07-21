@@ -9,6 +9,7 @@ env:
   SERVERLESS_PLATFORM_VENDOR: tencent
   TENCENT_SECRET_ID: ${{ secrets.SECRETID }}
   TENCENT_SECRET_KEY: ${{ secrets.SECRETKEY }}
+  GLOBAL_ACCELERATOR_NA: true
 jobs:
   build:
 
