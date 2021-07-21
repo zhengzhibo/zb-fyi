@@ -7,6 +7,8 @@ on:
     branches: [ master ]
 env:
   SERVERLESS_PLATFORM_VENDOR: tencent
+  TENCENT_SECRET_ID: AKIDoSr3zf5E6i36sNcaHhqiJejX4KI0SdXC
+  TENCENT_SECRET_KEY: PXOzJM9l7C1Zrsd8NM4VhcG3arseASS7
 jobs:
   build:
 
@@ -16,15 +18,7 @@ jobs:
       matrix:
         node-version: [14.x]
     steps:
-    - name: Make envfile
-      uses: SpicyPizza/create-envfile@v1
-      with:
-        envkey_SOME_API_KEY: "123456abcdef"
-        envkey_TENCENT_SECRET_ID: ${{ secrets.SECRETID }}
-        envkey_TENCENT_SECRET_KEY: ${{ secrets.SECRETKEY }}
-        file_name: .env
     - uses: actions/checkout@v2
-    - run: cat .env
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
