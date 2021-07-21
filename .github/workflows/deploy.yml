@@ -7,8 +7,8 @@ on:
     branches: [ master ]
 env:
   SERVERLESS_PLATFORM_VENDOR: tencent
-  SECRET_ID: ${{ secrets.SECRETID }}
-  SECRET_KEY: ${{ secrets.SECRETKEY }}
+  TENCENT_SECRET_ID: ${{ secrets.SECRETID }}
+  TENCENT_SECRET_KEY: ${{ secrets.SECRETKEY }}
 jobs:
   build:
 
