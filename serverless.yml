@@ -4,7 +4,7 @@ app: zb-fyi-7312f9d8
 
 inputs:
   src:
-    src: ./dist
+    src: ./public
     index: index.html
     error: index.html
   region: ap-guangzhou
