@@ -25,6 +25,7 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
+        <a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备2021010262号-1</a>
       </footer>
     </div>
   )
