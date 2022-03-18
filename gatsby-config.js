@@ -51,6 +51,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-pnpm`,
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
