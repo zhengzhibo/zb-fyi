@@ -25,8 +25,6 @@ specifiers:
   react-dom: ^17.0.1
   react-helmet: ^6.1.0
   serverless: ^2.52.0
-  typeface-merriweather: 0.0.72
-  typeface-montserrat: 0.0.75
 
 dependencies:
   gatsby: registry.npmmirror.com/gatsby/3.14.6_react-dom@17.0.2+react@17.0.2
@@ -52,8 +50,6 @@ dependencies:
   react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
   react-helmet: registry.npmmirror.com/react-helmet/6.1.0_react@17.0.2
   serverless: registry.npmmirror.com/serverless/2.72.3
-  typeface-merriweather: registry.npmmirror.com/typeface-merriweather/0.0.72
-  typeface-montserrat: registry.npmmirror.com/typeface-montserrat/0.0.75
 
 devDependencies:
   prettier: registry.npmmirror.com/prettier/2.3.2
@@ -17705,18 +17701,6 @@ packages:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typedarray/-/typedarray-0.0.6.tgz}
     name: typedarray
     version: 0.0.6
-    dev: false
-
-  registry.npmmirror.com/typeface-merriweather/0.0.72:
-    resolution: {integrity: sha512-gO0+fcZ1fTyKUsYY1ltYOOTI6FmBGeEdyIfeQg9NL8aInndk0feiJJVJsKHm/DiyYrnQEezraAQhz/KQoqMGtw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typeface-merriweather/-/typeface-merriweather-0.0.72.tgz}
-    name: typeface-merriweather
-    version: 0.0.72
-    dev: false
-
-  registry.npmmirror.com/typeface-montserrat/0.0.75:
-    resolution: {integrity: sha512-8ski20t3hdwu2T85pVfjK4jsDbwW8yWzd+LAKxYEmu+JVLVlB7G2yfmdKZz06pUwYCLVFvHvup+NYYulHDpE+w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typeface-montserrat/-/typeface-montserrat-0.0.75.tgz}
-    name: typeface-montserrat
-    version: 0.0.75
     dev: false
 
   registry.npmmirror.com/unbox-primitive/1.0.1:
