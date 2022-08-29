@@ -22,7 +22,7 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header} - New</header>
+      <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
         <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">闽ICP备2021010262号-1</a>
